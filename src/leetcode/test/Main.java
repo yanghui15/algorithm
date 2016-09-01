@@ -1,6 +1,6 @@
 package leetcode.test;
 
-import leetcode.Summary_Ranges_228.Solution;
+import leetcode.Ugly_Number_II_264.Solution;
 
 import java.util.Scanner;
 
@@ -12,7 +12,8 @@ public class Main {
 	public void run(){
 		Solution s = new Solution();
 		Scanner scan = new Scanner(System.in);
-
+		int n = scan.nextInt();
+		System.out.println(s.nthUglyNumber(n));
 	}
 
 	public static void main(String args[]){
