@@ -1,6 +1,6 @@
 package leetcode.test;
 
-import leetcode.Perfect_Rectangle_391.Solution;
+import leetcode.Summary_Ranges_228.Solution;
 
 import java.util.Scanner;
 
