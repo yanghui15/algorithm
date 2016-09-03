@@ -1,6 +1,6 @@
 package leetcode.test;
 
-import leetcode.H_Index_274.Solution;
+import leetcode.Move_Zeroes_283.Solution;
 
 import java.util.Scanner;
 
@@ -16,7 +16,7 @@ public class Main {
 		int re[] = new int[n];
 		for(int i = 0 ; i < n ; i ++)
 			re[i] = scan.nextInt();
-		System.out.println(s.hIndex(re));
+		s.moveZeroes(re);
 	}
 
 	public static void main(String args[]){

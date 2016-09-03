@@ -3,7 +3,12 @@ package leetcode.First_Bad_Version_278;
 /**
  * Created by yanghui on 16/9/3.
  */
-public class Solution extends VersionControl {
+public class Solution  {
+
+	public boolean isBadVersion(int n){
+		return false;
+	}
+
 	public int firstBadVersion(int n) {
 		long left = 1 ;
 		long right = n;
