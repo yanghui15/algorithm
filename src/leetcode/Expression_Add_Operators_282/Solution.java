@@ -8,8 +8,7 @@ import java.util.List;
  */
 public class Solution {
 	public List<String> addOperators(String num, int target) {
-		ArrayList<Integer> ans = new ArrayList<Integer>();
-
-
+		List<String> ans = new ArrayList<String>();
+		return ans;
 	}
 }

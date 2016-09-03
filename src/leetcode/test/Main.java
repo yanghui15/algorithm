@@ -1,6 +1,6 @@
 package leetcode.test;
 
-import leetcode.Move_Zeroes_283.Solution;
+import leetcode.Additive_Number_306.Solution;
 
 import java.util.Scanner;
 
@@ -12,11 +12,8 @@ public class Main {
 	public void run(){
 		Solution s = new Solution();
 		Scanner scan = new Scanner(System.in);
-		int n = scan.nextInt();
-		int re[] = new int[n];
-		for(int i = 0 ; i < n ; i ++)
-			re[i] = scan.nextInt();
-		s.moveZeroes(re);
+		String str = scan.next();
+		System.out.println(s.isAdditiveNumber(str));
 	}
 
 	public static void main(String args[]){
