@@ -1,6 +1,6 @@
 package leetcode.test;
 
-import leetcode.Additive_Number_306.Solution;
+import leetcode.Minimum_Window_Substring_76.Solution;
 
 import java.util.Scanner;
 
@@ -13,7 +13,8 @@ public class Main {
 		Solution s = new Solution();
 		Scanner scan = new Scanner(System.in);
 		String str = scan.next();
-		System.out.println(s.isAdditiveNumber(str));
+		String t = scan.next();
+		System.out.println(s.minWindow(str , t));
 	}
 
 	public static void main(String args[]){

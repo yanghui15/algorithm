@@ -78,11 +78,11 @@ public class Solution {
 			}
 		}
 		if(map.get(left+","+left_min) != 1 || map.get(left+","+left_max) != 1 || map.get(right+","+right_min) != 1
-						|| map.get(right+","+right_max) != 1)
+				|| map.get(right+","+right_max) != 1)
 			return false;
 		if(left_max - left_min != right_max - right_min)
 			return false;
 		long temp = (long)(right - left) * (long)(left_max - left_min);
-		return (temp == sum) && (cnt[1] == 4);
+		return (temp == sum) && (cnt[1] == 4) && (cnt[3] == 0);
 	}
 }
