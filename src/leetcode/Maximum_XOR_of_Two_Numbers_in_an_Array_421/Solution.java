@@ -54,8 +54,8 @@ public class Solution {
 
 		int ans = 0;
 		for(int i = 0 ; i < n ; i ++){
-//			int temp = search(root , b[i] , 0 );
-//			System.out.println(nums[i] + " "+ temp + " "+(nums[i]^temp));
+			int temp = search(root , b[i] , 0 );
+			System.out.println(nums[i] + " "+ temp + " "+(nums[i]^temp));
 			ans = Math.max(ans , search(root , b[i] , 0));
 		}
 		return ans;
