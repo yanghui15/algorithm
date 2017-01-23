@@ -11,10 +11,7 @@ public class Solution {
 		int n = s.length();
 		int[] ans = new int[n + 1];
 		int idx = 1;
-		ans[0] = 1;
 		for(int i = 0 ; i < n ; i ++){
-			ans[idx] = ans[idx - 1];
-			idx ++;
 
 		}
 		return ans;
