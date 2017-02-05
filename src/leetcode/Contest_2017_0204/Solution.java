@@ -10,11 +10,11 @@ public class Solution {
 	class IPOHelp implements Comparable<IPOHelp> {
 		int profit;
 		int cap;
+
 		public IPOHelp(int profit , int cap){
 			this.profit = profit;
 			this.cap = cap;
 		}
-
 		@Override
 		public int compareTo(IPOHelp ipo) {
 			if(this.profit == ipo.profit){
@@ -22,7 +22,6 @@ public class Solution {
 			}
 			return Integer.compare(ipo.profit , this.profit);
 		}
-
 	}
 
 	public int findMaximizedCapital(int k, int W, int[] Profits, int[] Capital) {
@@ -48,7 +47,6 @@ public class Solution {
 			}
 			if(!queue.isEmpty()){
 				IPOHelp top = queue.poll();
-//				init -= top.cap;
 				ans += top.profit;
 				init += top.profit;
 			}else{
