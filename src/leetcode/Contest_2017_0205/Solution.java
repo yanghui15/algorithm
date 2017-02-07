@@ -25,18 +25,15 @@ public class Solution {
 		int end = 0;
 		for(int i = 0 ; i < n ; i ++){
 			Integer cur = set.higher(re[i][1]);
-//			System.out.println(re[i][0] + " " + re[i][1] + " " + cur);
 			ans[re[i][1]] = cur == null ? -1 : nums[cur];
 			Integer nxt = set.isEmpty() ? null : set.first();
 			if(cur == null){
 				ans[re[i][1]] = nxt == null ? -1 : nums[nxt];
-//				System.out.println(re[i][0] + " " + re[i][1] + " " + cur + " " + nxt);
 			}
 			if(i + 1 < n && re[i][0] == re[i+1][0]){
 				end = i + 1;
 			}
 			if(i + 1 < n && re[i][0] != re[i + 1][0]){
-//				System.out.println(start + " " + end);
 				for(int j = start ; j <= end ; j ++){
 					set.add(re[j][1]);
 				}
