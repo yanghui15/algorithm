@@ -5,6 +5,10 @@ package leetcode.Smallest_Good_Base_483;
  */
 public class Solution {
 
+//	public int judge(long len , long number){
+//
+//	}
+//
 //	public String smallestGoodBase(String n) {
 //		long number = Long.valueOf(n);
 //		int max = (int)(Math.log(number) / Math.log(2)) + 1;
